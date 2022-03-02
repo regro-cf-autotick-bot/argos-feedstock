@@ -41,6 +41,7 @@ test:
     - argosw --help
   requires:
     - pip
+    - numpy >=1.11    
     - pyqt >=5.12
 
 about:
