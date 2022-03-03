@@ -1,5 +1,5 @@
 {% set name = "argos" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/argos-{{ version }}.tar.gz
-  sha256: 96efb8f0bd5bdb3c0958c33681e7cd0376d3a255c846d5bbae81e7f2228dcb04
+  sha256: d7a0d926f35b06a5b9753415bc033e09ca8e582ddaa0456b8dbfcdcce9db8668
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
     - python >=3.5
   run:
-    - cmlib >=1.1.0 
+    - cmlib >=1.1.0
     - numpy >=1.11
     - pgcolorbar >=1.1.0
     - pyqtgraph >=0.10
