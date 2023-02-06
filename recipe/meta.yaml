@@ -1,5 +1,5 @@
 {% set name = "argos" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/argos-{{ version }}.tar.gz
-  sha256: 8336fc126b16353b6a2ad79c086bdb9ebaa4d350d557535669199ce508a52693
+  sha256: ae4aee31d7e9d74465874494a8354d12a04871e5388da8ece653423b42d2ecfc
 
 build:
   number: 0
