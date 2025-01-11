@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/argos-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/argos-{{ version }}.tar.gz
   sha256: ae4aee31d7e9d74465874494a8354d12a04871e5388da8ece653423b42d2ecfc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - argos = argos.main:main
@@ -22,13 +22,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
     - cmlib >=1.1.0
     - numpy >=1.11
     - pgcolorbar >=1.1.0
     - pyqtgraph >=0.10
-    - python >=3.5
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -42,6 +42,7 @@ test:
   requires:
     - pip
     - pyqt >=5.12
+    - python {{ python_min }}
 
 about:
   home: https://github.com/titusjan/argos
